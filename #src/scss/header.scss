@@ -1,0 +1,130 @@
+//====================================================================================================
+.header {
+	position: relative;
+	z-index: 100;
+	// .header__content
+	&__content {
+		max-width: 1052px;
+		padding: 0px 10px;
+		margin: 0px auto;
+	}
+	// .header__menu
+	&__menu {
+		padding: 10px 0;
+		height: 100px;
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $md3+px) {
+			height: 50px;
+		}
+	}
+}
+.menu {
+	// .menu__icon
+	&__icon {
+	}
+
+	&__logo {
+		color: #44c0c2;
+		font-family: "Lobster";
+		font-size: 43px;
+		font-weight: 400;
+
+	}
+	// .menu__body
+	&__body {
+		@media (max-width: $md3+px) {
+			transform: translate(0px, -100%);
+			transition: transform 0.8s ease 0s;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			overflow: auto;
+			padding: 70px 10px 30px 10px;
+			background-color: rgba(255, 255, 255, 0.95);
+			&._active {
+				transform: translate(0px, 0%);
+			}
+		}
+	}
+	// .menu__list
+	&__list {
+		li {
+			margin: 0px 0px 30px 0px;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+		@media (min-width: $md3+px) {
+			display: flex;
+			li {
+				margin: 0px 33px 0px 0px;
+			}
+		}
+	}
+	// .menu__link
+	&__link {
+		font-size: 15px;
+		font-weight: 400;
+		color: #4e525d;
+		transition: color 0.3s ease 0s;
+		&._active {
+			color: #ff6464;
+		}
+		@media (min-width: $md2+px) {
+			&:hover {
+				color: #ff6464;
+			}
+		}
+		@media (max-width: $md3+px) {
+			font-size: 40px;
+			display: block;
+			text-align: center;
+		}
+	}
+}
+.icon-menu {
+	display: none;
+	@media (max-width: $md3+px) {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span {
+			transition: all 0.3s ease 0s;
+			top: calc(50% - 1px);
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			&:first-child {
+				top: 0px;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+			}
+		}
+		&._active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+}
+
+//====================================================================================================
