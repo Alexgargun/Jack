@@ -134,7 +134,7 @@
 	box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
 	border-radius: 4px;
 	padding: 20px;
-	@media (max-width: $md3+px) {
+	@media (max-width: $md2+px) {
 		padding: 15px;
 	}
 	*:last-child {
@@ -209,7 +209,7 @@
 	display: flex;
 	background-color: #f1f1f1;
 	
-	@media (max-width: $md3+px) {
+	@media (max-width: $md1+px) {
 		padding: 30px 0px 30px 0px;
 	}
 	&__container {
@@ -226,15 +226,16 @@
 	}
 	// .featured-works__items
 	&__items {
-		@media (max-width: $md3+px) {
-			display: flex;
-			overflow: auto;
+		@media (max-width: $md1+px) {
+			display: inline-block;
+			margin: 0 auto;
+			max-width: 100%;
 			.works__item {
-				flex: 0 0 90%;
 				margin: 0px 15px 0px 0px;
 			}
 		}
 	}
+	
 	&__btn {
 		margin: 60px 0px 100px 0px;
 		width: 232px;

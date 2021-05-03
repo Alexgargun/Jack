@@ -1,20 +1,116 @@
 .footer {
-	text-align: center;
-	padding: 50px 0;
+	background-image: url('../img/article/Layer_28.webp');
+	background-color: black;
+	
+	padding: 100px 0px 100px 0px;
 	@media (max-width: $md3+px) {
 		padding: 30px 0;
 	}
-	// .footer__content
+
+	&__title {
+		color: #ffffff;
+		font-family: "Open Sans";
+		text-align: center;
+		font-size: 42px;
+		font-weight: 400;
+		margin: 107px 0px 120px 0px;
+	}
+
+	&__contacts {
+		font-size: 24px;
+		color: #ffffff;
+	}
+
+	&__block{
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: $md3+px) {
+            display: block;
+		}
+	}
+
+	&__column {
+		
+		flex: 0 1 50%;
+		padding: 0px 10px;
+		flex-direction: column;
+		margin: 0 auto;
+		
+		
+	} 
+
+	&__description {
+		margin: 16px 0px 40px 0px;
+		opacity: 0.5;
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 14px;
+		font-weight: 400;
+	}
+	
 	&__content {
 	}
-	// .footer__social
+	
 	&__social {
 		margin: 0px 0px 25px 0px;
 	}
-	// .footer__copy
+	
 	&__copy {
 	}
-}
-//====================================================================================================
 
-//====================================================================================================
+	&__column {
+		
+	}
+
+	&__form {
+		display: block;
+		
+	}
+
+	&__message {
+		
+	}
+
+	&__action {
+		display: block;
+	}
+
+	&__submit {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+
+
+
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px; 
+	border: 1px solid #ccc;
+	border-radius: 4px; 
+	box-sizing: border-box;
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical 
+  }
+
+ 
+ 
+  input[type=submit] {
+	width: 170px;
+	height: 50px;
+	background-color: #49cbcd;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+	background-color: #ffffff;
+  }
+
+
