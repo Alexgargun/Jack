@@ -971,25 +971,20 @@ body.ie ._ibg img {
   font-weight: 400;
 }
 
-.menu__list li {
-  margin: 0px 0px 30px 0px;
-}
-
-.menu__list li:last-child {
-  margin: 0px 0px 0px 0px;
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu__link {
-  font-size: 15px;
-  font-weight: 400;
-  color: #4e525d;
-  -webkit-transition: color 0.3s ease 0s;
-  -o-transition: color 0.3s ease 0s;
-  transition: color 0.3s ease 0s;
+  padding: 40px 16px;
 }
 
-.menu__link._active {
-  color: #ff6464;
+.menu__link:hover {
+  background-color: #f8f9fb;
+  border-bottom: 2px solid #44c0c2;
+  color: #44c0c2;
 }
 
 .icon-menu {
@@ -1097,9 +1092,8 @@ input[type=submit]:hover {
 
 .hello {
   background-image: url("../img/article/Layer_4.webp");
-  height: 100vh;
   background-color: #86dbdd;
-  padding: 140px 0px 150px 0px;
+  padding: 130px 0px 130px 0px;
 }
 
 .hello__container {
@@ -1119,7 +1113,6 @@ input[type=submit]:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 18px 110px 0px 0px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -1849,12 +1842,6 @@ input[type=submit]:hover {
   font-size: 19px;
 }
 
-.page {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1877,16 +1864,6 @@ input[type=submit]:hover {
 }
 
 @media (min-width: 767.98px) {
-  .menu__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .menu__list li {
-    margin: 0px 33px 0px 0px;
-  }
-
   .recent-posts__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1917,10 +1894,6 @@ input[type=submit]:hover {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
     background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .menu__link:hover {
-    color: #ff6464;
   }
 
   .recent-post__title:hover {
@@ -2017,7 +1990,7 @@ input[type=submit]:hover {
   }
 
   .header__menu {
-    height: 50px;
+    height: 40px;
   }
 
   .menu__body {
@@ -2045,10 +2018,22 @@ input[type=submit]:hover {
             transform: translate(0px, 0%);
   }
 
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .menu__link {
-    font-size: 40px;
+    font-size: 30px;
     display: block;
     text-align: center;
+    padding: 20px;
+    color: #44c0c2;
   }
 
   .icon-menu {

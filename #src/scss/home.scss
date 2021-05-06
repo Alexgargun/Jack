@@ -1,9 +1,8 @@
 //====================================================================================================
 .hello {
 	background-image: url('../img/article/Layer_4.webp');
-	height: 100vh;
 	background-color: #86dbdd;
-	padding: 140px 0px 150px 0px;
+	padding: 130px 0px 130px 0px;
 	@media (max-width: $md1+px) {
 		padding: 0px 0px 70px 0px;
 	}
@@ -23,7 +22,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 18px 110px 0px 0px;
 		flex: 1 1 auto;
 		*:last-child {
 			margin-bottom: 0;
