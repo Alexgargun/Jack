@@ -1,6 +1,7 @@
 //====================================================================================================
 .hello {
 	background-image: url('../img/article/Layer_4.webp');
+	background-size: cover;
 	background-color: #86dbdd;
 	padding: 130px 0px 130px 0px;
 	@media (max-width: $md1+px) {
@@ -37,9 +38,7 @@
 	&__title {
 		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.16);
 		color: #ffffff;
-		font-family: "Open Sans";
 		font-size: 63px;
-		font-weight: 400;
 		margin: 0px 0px 30px 0px;
 		@media (max-width: $md3+px) {
 			margin: 0px 0px 20px 0px;
@@ -48,9 +47,7 @@
 	// .hello__text
 	&__text {
 		color: #ffffff;
-		font-family: "Open Sans";
 		font-size: 23px;
-		font-weight: 400;
 		text-align: center;
 		margin: 0px 0px 60px 0px;
 		@media (max-width: $md3+px) {
@@ -187,9 +184,6 @@
 		height: 30px;
 		background-color: #49cbcd;
 		color: #ffffff;
-		font-family: "Open Sans";
-		font-size: 14px;
-		font-weight: 400;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
@@ -207,7 +201,7 @@
 	display: flex;
 	background-color: #f1f1f1;
 	
-	@media (max-width: $md1+px) {
+	@media (max-width: $md4+px) {
 		padding: 30px 0px 30px 0px;
 	}
 	&__container {
@@ -216,22 +210,15 @@
 		align-items: center;
 	}
 	&__title {
-		font-family: "Open Sans";
 		font-size: 42px;
-		font-weight: 400;
 		text-align: center;
 		margin: 50px 0px 64px 0px;
 	}
 	// .featured-works__items
 	&__items {
-		@media (max-width: $md1+px) {
-			display: inline-block;
-			margin: 0 auto;
-			max-width: 100%;
-			.works__item {
-				margin: 0px 15px 0px 0px;
-			}
-		}
+		display: flex;
+		justify-content: center;
+		
 	}
 	
 	&__btn {
@@ -240,9 +227,6 @@
 		height: 63px;
 		background-color: #49cbcd;
 		color: #ffffff;
-		font-family: "Open Sans";
-		font-size: 24px;
-		font-weight: 400;
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;

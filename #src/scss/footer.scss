@@ -1,5 +1,6 @@
 .footer {
 	background-image: url('../img/article/Layer_28.webp');
+	background-size: cover;
 	background-color: black;
 	
 	padding: 100px 0px 100px 0px;
@@ -53,6 +54,7 @@
 	
 	&__social {
 		margin: 0px 0px 25px 0px;
+		color: #ffffff;
 	}
 	
 	&__copy {
