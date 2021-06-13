@@ -10,7 +10,7 @@
 	}
 	// .header__menu
 	&__menu {
-		padding: 10px 0;
+		padding: 20px 0;
 		height: 100px;
 		align-items: center;
 		display: flex;
@@ -23,6 +23,7 @@
 .menu {
 	// .menu__icon
 	&__icon {
+		align-items: center;
 	}
 
 	&__logo {

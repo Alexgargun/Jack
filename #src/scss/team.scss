@@ -1,25 +1,17 @@
 .team {
-    margin: 93px 0px 107px 0px;
-	padding: 25px 0px 13px 0px;
+	padding: 93px 0px 107px 0px;
 	@media (max-width: $md3+px) {
 		padding: 25px 0px 23px 0px;
 	}
     &__container {
 	}
-	// .recent-posts__header
-	&__header {
-		display: flex;
-		margin: 0px 0px 20px 0px;
-	}
+	
 	// .recent-posts__title
 	&__title {
         color: #4e525d;
         font-family: "Open Sans";
         font-size: 42px;
-        font-weight: 400;
         text-align: center;
-		padding: 0px 20px 0px 0px;
-		flex: 1 1 auto;
 	}
 	
 	&__items {
@@ -37,21 +29,6 @@
 			grid-template-rows: 25% 25% 25% 25%;
 		}
 	}
-	
-	&__column {
-		display: flex;
-		padding: 0px 10px;
-		margin: 0px 0px 17px 0px;
-		@media (max-width: $md3+px) {
-			flex: 0 1 33.333%;
-		}
-	}
-	
-	&__item {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 }
 .teams {
     height: 100%;
@@ -67,7 +44,10 @@
 	}
 
     &__column {
-        margin: 140px -22px 107px -22px ;
+        margin: 140px -22px 0 -22px;
+		@media (max-width: $md3+px) {
+			margin: 40px -22px;
+		}
     }
 	// .recent-post__title
 	&__image {
@@ -77,15 +57,6 @@
         overflow: hidden;
 		transition: color 0.3s ease 0s;
 		margin: 0px 0px 17px 0px;
-		@media (min-width: $md2+px) {
-			&:hover {
-				color: #ff6464;
-			}
-		}
-		@media (max-width: $md3+px) {
-			font-size: 22px;
-			margin: 0px 0px 10px 0px;
-		}
 	}
 
     &__photo {
@@ -108,7 +79,7 @@
 	// .recent-post__text
 	&__text {
 		text-align: center;
-		margin: 0px 0px 15px 0px;
+		
 	}
     &__item {
         margin: 0px 55px;

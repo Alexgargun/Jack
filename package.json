@@ -27,5 +27,8 @@
 		"imagemin-webp": "latest",
 		"transform-runtime": "0.0.0",
 		"webp-converter": "2.2.3"
+	},
+	"dependencies": {
+		"swiper": "^6.7.0"
 	}
 }

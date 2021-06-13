@@ -1,4 +1,8 @@
 //====================================================================================================
+.swiper-container {
+	width: 600px;
+	height: 300px;
+  }
 .hello {
 	background-image: url('../img/article/Layer_4.webp');
 	background-size: cover;
@@ -136,8 +140,23 @@
 	}
 
 	&__photo {
-		width: 26px;
-		height: 40px;
+		
+		:nth-child(1) {
+			width: 37px;
+			height: 37px;
+		}
+		:nth-child(2) {
+			width: 38px;
+			height: 33px;
+		}
+		:nth-child(3) {
+			width: 26px;
+			height: 40px;
+		}
+		:nth-child(4) {
+			width: 27px;
+			height: 33px;
+		}
 	}
 	// .recent-post__title
 	&__title {
