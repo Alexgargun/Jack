@@ -38,11 +38,17 @@
 	}
 	// .recent-posts__item
 	&__item {
+        transition: color 1.5s ease 0;
         padding: 10px 10px;
         display: block;
         flex-direction: column;
         align-items: center;
         max-width: 100%;
+        &:hover {
+            .gray {
+                background-color: #49cbcd;
+            }
+        }
     }
 
     &__price {
@@ -71,26 +77,24 @@
         display: flex;
         height: 100px;
         background-color: #f8f9fb;
+        align-items: center;
+        justify-content: center;
     }
     
     &__btn {
-        align-items: center;
+        padding: 12px 50px;
+        text-align: center;
+        color: #fff;
         background-color: #788492;
-        width: 170px;
-        height: 40px;
+        border-radius: 5px;
         font-size: 17px;
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
     }
 }
 
-.blue {
-    background-color: #49cbcd;
-}
 
-.gray .btn {
-    &:hover {
-        color: #788492;
-    }
-}
 
 
 /*
