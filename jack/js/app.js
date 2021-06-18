@@ -318,6 +318,9 @@ new Swiper('.image-slider', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
 	},
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 32,
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,

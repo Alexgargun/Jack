@@ -4,6 +4,7 @@
 }
 .title {
     text-align: center;
+    font-weight: 400;
     font-size: 42px;
     color: #4e525d;
     margin: 0 0 30px 0;
@@ -16,6 +17,9 @@
             color: #8c8c8c;
             font-size: 23px;
         }
+        @media (max-width: $md3+px) {
+            display: none;
+        }
     }
     .swiper-button-prev {
         top: 10%;
@@ -23,6 +27,9 @@
             z-index: 100;
             color: #8c8c8c;
             font-size: 23px;
+        }
+        @media (max-width: $md3+px) {
+            display: none;
         }
     }
     
@@ -38,7 +45,12 @@
 }
 .swiper-container {
     width: 1200px;
-    height: 150px;
+    height: 200px;
+    @media (max-width: $md3+px) {
+        max-width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
 }
 .image-slider__wrapper {
     
@@ -49,6 +61,9 @@
 }
 .swiper-slide {
     padding: 0px 200px 0px 200px;
+    @media (max-width: $md3+px) {
+        padding: 0px;
+    }
 }
 .image-slider__image {
     text-align: center;
