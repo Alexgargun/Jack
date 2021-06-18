@@ -15,7 +15,6 @@ async function form_submit(e) {
 		let formMethod = form.getAttribute('method') ? form.getAttribute('method').trim() : 'GET';
 		const message = form.getAttribute('data-message');
 		const ajax = form.getAttribute('data-ajax');
-		const test = form.getAttribute('data-test');
 
 		//SendForm
 		if (ajax) {
@@ -39,7 +38,7 @@ async function form_submit(e) {
 			}
 		}
 		// If test
-		if (test) {
+		if (form.hasAttribute('data-test')) {
 			e.preventDefault();
 			popup_open(message + '-message');
 			form_clean(form);
@@ -220,7 +219,7 @@ function select_item(select) {
 	select_parent.insertAdjacentHTML('beforeend',
 		'<div class="select__item">' +
 		'<div class="select__title">' + select_type_content + '</div>' +
-		'<div class="select__options">' + select_get_options(select_options) + '</div>' +
+		'<div hidden class="select__options">' + select_get_options(select_options) + '</div>' +
 		'</div></div>');
 
 	select_actions(select, select_parent);
