@@ -162,3 +162,18 @@ new Swiper('.image-slider', {
 		dynamicBullets: true,
 	}
 }); 
+
+new Swiper('.hello-slider', {
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 32,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		dynamicBullets: true,
+	}
+}); 
