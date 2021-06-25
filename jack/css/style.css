@@ -1940,9 +1940,13 @@ input[type=search],
   margin: 0px 0px 17px 0px;
   background-color: #eeeef0;
   border-radius: 50%;
-  font-size: 85px;
+  font-size: 0;
   color: #f46d6d;
   font-weight: 900;
+}
+
+.teams__image:hover {
+  font-size: 85px;
 }
 
 .teams__info {
