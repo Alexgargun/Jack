@@ -1450,7 +1450,7 @@ input[type=submit]:hover {
 }
 
 .works__item {
-  margin: 25px 25px;
+  margin: 15px;
 }
 
 .works__image {
@@ -2633,6 +2633,10 @@ input[type=search],
 
   .recent-posts {
     padding: 25px 0px 23px 0px;
+  }
+
+  .recent-posts__item {
+    margin-bottom: 40px;
   }
 
   .recent-post__title {

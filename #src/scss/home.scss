@@ -139,6 +139,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		@media (max-width: $md3+px) {
+			margin-bottom: 40px;
+		}
 	}
 }
 .recent-post {
@@ -254,7 +257,6 @@
 	&__items {
 		display: flex;
 		justify-content: center;
-		
 	}
 	
 	&__btn {
